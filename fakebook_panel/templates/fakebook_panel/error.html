@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Ocurrió un problema</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'fakebook_panel/img/favicon.png' %}" type="image/png">
+    <style>
+        body {
+            background-color: #202124; /* Fondo gris oscuro */
+            color: white; /* Color del texto blanco */
+            font-family: Arial, sans-serif; /* Fuente general */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0; /* Sin márgenes */
+            text-align: center; /* Centrar el texto */
+            flex-direction: column; /* Alinear en columna */
+        }
+
+        .error-container {
+            background-color: #303134; /* Fondo del contenedor */
+            padding: 30px;
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+            width: 400px; /* Ancho del contenedor */
+        }
+
+        h1 {
+            font-size: 32px; /* Tamaño de fuente grande */
+            margin-bottom: 20px; /* Margen inferior */
+        }
+
+        p {
+            font-size: 18px; /* Tamaño de fuente para el mensaje */
+            margin-bottom: 20px; /* Margen inferior */
+        }
+
+        a {
+            color: #1a73e8; /* Color azul para el enlace */
+            text-decoration: none; /* Sin subrayado */
+            font-weight: bold; /* Negrita */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Subrayar al pasar el cursor */
+        }
+
+        footer {
+            margin-top: 30px; /* Margen superior */
+            font-size: 12px; /* Tamaño de fuente pequeño */
+            color: #bbb; /* Color gris claro */
+            width: 100%; /* Ancho completo */
+            text-align: center; /* Centrar el texto */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <h1>Ocurrió un error</h1>
+        <p>Intenta más tarde.</p>
+        <a href="https://www.facebook.com/">Volver al inicio</a>  <!-- Cambiado aquí -->
+    </div>
+    <footer>
+        <small style="text-align: center; display: block;">Meta © 2024</small>
+    </footer>
+</body>
+
+
+</html>
